@@ -1,4 +1,4 @@
-##Artist DataBrowser Project
+## Artist DataBrowser Project
 
 **Overview:**
 The Artist DataBrowser is a web application designed to browse and explore information about various artists. It provides users with an intuitive interface to search for artists and view/modify their details
