@@ -1,0 +1,42 @@
+[   
+    {
+        "name": "Slow Pulp",
+        "latestAlbum": "Yard",
+        "year": 2015,
+        "isGroup": true,
+        "genre": "Indie Rock",
+        "image": "images/slow-pulp-yard.jpeg"
+    },
+    {
+        "name": "Nails",
+        "latestAlbum": "You Will Never Be One of Us",
+        "year": 2009,
+        "isGroup": true,
+        "genre": "Death Metal",
+        "image": "images/nails-you-will-never.jpeg"
+    },
+    {
+        "name": "Yeat",
+        "latestAlbum": "AftërLyfe",
+        "year": 2015,
+        "isGroup": false,
+        "genre": "Rap",
+        "image": "images/yeat-afterlyfe.jpeg"
+    },
+    {
+        "name": "100 gecs",
+        "latestAlbum": "10,000 gecs",
+        "year": 2015,
+        "isGroup": true,
+        "genre": "Hyperpop",
+        "image": "images/10000_gecs_album_cover.jpg"
+    },
+    {
+        "name": "Pantera",
+        "latestAlbum": "Reinventing the Steel",
+        "year": 1981,
+        "isGroup": true,
+        "genre": "Metal",
+        "image": "images/pantera-reinventing.jpg"
+    }
+]

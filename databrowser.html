@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="js/databrowser.js"></script>
+    <script src="js/requests.js"></script>
+    <script src="js/insertItem.js"></script>
+    <script src="js/musicalArtist.js"></script>
+    <script src="js/editItem.js"></script>
+    <link rel="stylesheet" href="databrowser.css">
+</head>
+
+<body onload="initializeDataBrowser()">
+    <h2 id="header">Artist Data Browser</h2>
+    <div id="main_content">
+        <div id="left_display">
+            <div id="left_display_buttons">
+                <input id="prev_button" class="prev_next_buttons" type="button" value="❮ Prev" onclick="getPrevArtist()">
+                <input id="first_button" class="prev_next_buttons" type="button" value="❮ First" onclick="getFirstArtist()">
+            </div>
+        </div>
+        <div id="center_display">
+            <div id = "display_clear_buttons">
+                <input type="button" value="Display" onclick="initializeDataBrowser()">
+                <input type="button" value="Clear" onclick="clearDisplay()">
+            </div>
+            
+            <br>
+            <div id="buttons_div">
+                <input type="button" value="Edit" onclick="toggleEditElement()">
+                <input type="button" id="delete_button" value="Delete" onclick="deleteElementRequest()">
+                <input type="button" value="Insert" onclick="createNewElement()">
+                <input type="button" value="Sort by Index" onclick="sortDefault()">
+                <input type="button" value="Sort by Artist Name" onclick="sortAlpha()">
+            </div>
+            <div id="insert_buttons_div" class="insert_elements">
+                <input type="button" value="Insert New Element" onclick="InsertNewElement()">
+                <input type="button" value="Cancel" onclick=" cancelInsertNewElement()">
+            </div>
+            <div id="edit_buttons_div" class="edit_elements">
+                <input type="button" value="Save changes" onclick="saveEditElement()">
+                <input type="button" value="Cancel" onclick="cancelEditElement()">
+            </div>
+            <p id="p_index">
+                Index: <span id="ind_display"></span>
+            </p>
+            <div id = "artist_form_div">
+                <form id="artist_form">
+                    <!-- action="php/insert_new.php;" enctype="multipart/form-data" target="hidden-iframe" method="post" onsubmit="cancelInsertNewElement()"> -->
+                    <label for="name_text">Name:</label>
+                    <input id="name_text" name="name_text" class="text_display" type="text" value="" readonly>
+                    <br>
+                    <br>
+                    <label for="album_text">Latest Album:</label>
+                    <input id="album_text" name="album_text" class="text_display" type="text" value="" readonly>
+                    <br>
+                    <br>
+                    <label for="year_text">Year:</label>
+                    <input id="year_text" name="year_text" class="text_display" type="text" value="" readonly>
+                    <br>
+                    <br>
+                    <label for="group_text">Is Group?:</label>
+                    <input id="group_text" name="group_text" class="text_display" type="text" value="" readonly>
+                    <br>
+                    <br>
+                    <label for="genre_text">Genre:</label>
+                    <input id="genre_text" name="genre_text" class="text_display" type="text" value="" readonly>
+                    <br>
+                    <div id="conf_edit_button_div"></div>
+                    <br>
+        
+                    <label for="imageup">Image:</label>
+                    <input id="imageup" name="imageup" type="file" hidden>
+                    <br>
+                    <br>
+        
+                </form>
+            </div>
+            
+            <image src="" id="artist_image"></image>
+            <!-- <input id="artist_image" type="text" value="" readonly> -->
+        </div>
+        <div id="right_display">
+            <div id="right_display_buttons">
+                <input id="next_button" class="prev_next_buttons" type="button" value="Next ❯" onclick="getNextArtist()">
+                <input id="last_button" class="prev_next_buttons" type="button" value="Last ❯" onclick="getLastArtist()">
+            </div>
+        </div>
+        <!-- <p>Name: <span id="name_span"></span></p>
+        <p>Latest Album: <span id="album_span"></span></p>
+        <p>Year: <span id="year_span"></span></p>
+        <p>Is Group?: <span id="group_span"></span></p>
+        <p>Genre: <span id="genre_span"></span></p>
+        <p>Image: </p><image src="" id="artist_image"></image> -->
+        <!-- <iframe name="hidden-iframe" style="display: none;"></iframe> -->
+        <!-- <iframe name="hidden-iframe" id="hidden-iframe" ></iframe> -->
+    </div>
+    
+
+</body>
+
+</html>
