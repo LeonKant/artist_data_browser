@@ -8,10 +8,10 @@ include "artist.php";
 if(isset($_GET["index"])){
     $index =((int)$_GET["index"])+1;
 }
-$servername="localhost";
-$username="AdminLab11";
-$password="4VPnroTOC6wOU3mn";
-$dbname = "artistsLab11";
+$servername="";
+$username="";
+$password="";
+$dbname = "";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 

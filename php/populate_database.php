@@ -3,10 +3,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$servername="localhost";
-$username="AdminLab11";
-$password="4VPnroTOC6wOU3mn";
-$dbname = "artistsLab11";
+$servername="";
+$username="";
+$password="";
+$dbname = "";
 $conn = new mysqli($servername, $username, $password,$dbname);
 
 $stmt = $conn->prepare("INSERT INTO Artist (band_name,latest_album_name,year,is_group,genre,image_url) VALUES (?,?,?,?,?,?)");

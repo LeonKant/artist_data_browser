@@ -9,10 +9,10 @@ if(isset($_POST["index"])){
 
 $json_object = json_decode($_POST["data"],true);
 
-$servername="localhost";
-$username="AdminLab11";
-$password="4VPnroTOC6wOU3mn";
-$dbname = "artistsLab11";
+$servername="";
+$username="";
+$password="";
+$dbname = "";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 
